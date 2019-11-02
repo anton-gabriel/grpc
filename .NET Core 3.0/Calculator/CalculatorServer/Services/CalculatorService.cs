@@ -56,7 +56,7 @@ namespace CalculatorServer.Services
             await responseStream.WriteAsync(new OperationResponse()
             {
                 Result = default,
-                Message = $"Please enter an operation type."
+                Message = "Please enter an operation type."
             });
         }
 
@@ -65,7 +65,7 @@ namespace CalculatorServer.Services
             await responseStream.WriteAsync(new OperationResponse()
             {
                 Result = default,
-                Message = $"Please enter one more operand."
+                Message = "Please enter one more operand."
             });
         }
         #endregion
