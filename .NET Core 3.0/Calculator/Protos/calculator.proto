@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "Generated";
+
+enum OperationType {
+	InvalidOperation = 0;
+	Addition = 1;
+	Subtraction = 2;
+	Multiplication = 3;
+	Division = 4;
+}
+
+message Operand {
+	double value = 1;
+}
+
+message OperationRequest {
+	Operand operand = 1;
+	OperationType operation = 2;
+}
+
+message OperationResponse {
+	double result = 1;
+	string message = 2;
+}
+
+service CalculatorService {
+	rpc Calculate(stream OperationRequest) returns (stream OperationResponse);
+}
