@@ -1,0 +1,56 @@
+<mxfile host="Electron" modified="2023-05-14T16:47:06.668Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="WmN9LWc3SpOla66TY7d2" version="21.2.8" type="device">
+  <diagram name="Page-1" id="7PV19S-VO3PLGcmBevUM">
+    <mxGraphModel dx="574" dy="338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="htZxkSef0NhbEghDyWCq-1" value="&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;.NET WPF&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#2A90D0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="190" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-2" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;gRPC Client&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#2A90D0;fillColor=#2A90D0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-3" value="&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;.NET Console App&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#2A90D0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="190" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-4" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#FFFFFF;endArrow=classic;strokeColor=#2A90D0;strokeWidth=3;" edge="1" parent="1" source="htZxkSef0NhbEghDyWCq-5" target="htZxkSef0NhbEghDyWCq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-5" value="&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;gRPC Server&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#2A90D0;fillColor=#2A90D0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="200" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-6" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#FFFFFF;endArrow=classic;strokeColor=#2A90D0;strokeWidth=3;" edge="1" parent="1" source="htZxkSef0NhbEghDyWCq-2" target="htZxkSef0NhbEghDyWCq-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-7" value="&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#2a90d0&quot;&gt;Proto response&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="185" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-8" value="&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#2a90d0&quot;&gt;Proto request&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="223" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-9" value="&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;i&gt;over HTTP2&lt;/i&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=#345F60;" vertex="1" parent="1">
+          <mxGeometry x="345" y="209" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-10" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#000000;endArrow=classic;strokeColor=#2A90D0;strokeWidth=1;dashed=1;" edge="1" parent="1" source="htZxkSef0NhbEghDyWCq-12" target="htZxkSef0NhbEghDyWCq-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-14" value="Generates" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;" vertex="1" connectable="0" parent="htZxkSef0NhbEghDyWCq-10">
+          <mxGeometry x="-0.1042" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-11" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.528;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#000000;endArrow=classic;strokeColor=#2A90D0;strokeWidth=1;dashed=1;" edge="1" parent="1" source="htZxkSef0NhbEghDyWCq-12" target="htZxkSef0NhbEghDyWCq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-13" value="Generates" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;fontColor=default;" vertex="1" connectable="0" parent="htZxkSef0NhbEghDyWCq-11">
+          <mxGeometry x="-0.1509" y="13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="htZxkSef0NhbEghDyWCq-12" value="&lt;b&gt;&lt;font color=&quot;#2a90d0&quot;&gt;.proto file&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=#000000;strokeColor=#2A90D0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

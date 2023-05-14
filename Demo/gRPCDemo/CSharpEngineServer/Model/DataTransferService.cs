@@ -16,11 +16,6 @@
 
     public override Task<AudioChunk> GenerateSignal(SignalRequest request, ServerCallContext context)
     {
-      //Cum functioneaza RPC-urile
-      //pentru fiecare call un thread nou? Cate call-uri pot avea in paralel?
-      //Cum este tradus un call catre server si invers (catre client)?
-      //Viteza
-      //
       _Logger.LogInformation($"{nameof(GenerateSignal)} request: [input] = {{Request}}", request);
       IEnumerable<AudioPoint> signal = SignalGenerator.GenerateSinusoidalSignal(request);
       var chunk = new AudioChunk();
