@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+//C# namespace, C++ namespace, python module etc...
+package audiodata;
+
+message AudioPoint {
+  double x = 1;
+  double y = 2;
+}
+
+message AudioChunk {
+  repeated AudioPoint points = 1;
+}
+
+message SignalRequest {
+  double frequency = 1;
+  double amplitude = 2;
+  double phaseShift = 3;
+  double duration = 4;
+  int32 sampleRate = 5;
+}
+
+message AudioStreamRequest {
+  double durationInSeconds = 1;
+}
+
+service DataTransfer {
+  // Unary RPC
+  rpc GenerateSignal (SignalRequest) returns (AudioChunk);
+  
+  // Server streaming RPC
+  rpc StreamAudioInput (AudioStreamRequest) returns (stream AudioChunk);
+  
+  // Client streaming RPC
+  rpc SendChunks (stream AudioChunk) returns (AudioChunk);
+  
+  // Bidirectional streaming RPC
+  rpc StreamChunks (stream AudioChunk) returns (stream AudioChunk);
+}
